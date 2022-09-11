@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "petitphp/woocommerce-product-attributes",
+  "version": "0.1.0",
+  "title": "Woocommerce Product Attributes",
+  "category": "design",
+  "icon": "tag",
+  "description": "Display a product attribute.",
+  "attributes": {
+    "productAttributeId": {
+      "type": "integer",
+      "default": 0
+    },
+    "prefix": {
+      "type": "string",
+      "default": ""
+    },
+    "separator": {
+      "type": "string",
+      "default": ", "
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "textdomain": "woocommerce-product-attributes",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
